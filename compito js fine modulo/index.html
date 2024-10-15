@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <script src="modificato.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricerca lavoro</title>
+  </head>
+  <body>
+    <h1>Cerca lavoro</h1>
+
+    <label for="jobTitle">Posizione lavorativa:</label> <!-- Label classica, con richiamoo dell'id al quale appartenente il title. -->
+    <input type="text" id="jobTitle" placeholder="Inserisci il titolo"> <!-- ID utilizzato per poi richiamarlo in js. -->
+
+    <label for="jobLocation">Posizione geografica:</label>
+    <input type="text" id="jobLocation" placeholder="Inserisci la location">
+
+    <button onclick="GuidoResearch()">Cerca</button> <!-- Richiamo la funzione GuidoResearch al click -->
+
+    <!-- Contenitore per i risultati -->
+    <h2>Risultati della ricerca:</h2>
+    <ul id="resultsList"></ul>
+
+  </body>
+</html>
+  
